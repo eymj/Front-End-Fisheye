@@ -36,4 +36,10 @@ function send(e) {
   formData.forEach((value, key) => (json[key] = value));
 
   console.log(json);
+
+  // Réinitialiser tous les champs de formulaires
+  form.querySelectorAll("input").forEach((i) => {
+    i.value = ""
+  })
+
 }
